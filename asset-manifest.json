@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/startup-landingpage/static/css/main.a6139c55.css",
+    "main.js": "/startup-landingpage/static/js/main.1e07f3c2.js",
+    "static/media/imgPhone.png": "/startup-landingpage/static/media/imgPhone.059b36c0167c943e5357.png",
+    "static/media/bannerPhone.png": "/startup-landingpage/static/media/bannerPhone.72e48c1640c22543208d.png",
+    "static/media/coreFeature.png": "/startup-landingpage/static/media/coreFeature.69eb30579f496864b423.png",
+    "static/media/featureBanner.png": "/startup-landingpage/static/media/featureBanner.e6e444dc50c6acbf17cf.png",
+    "static/media/banner.png": "/startup-landingpage/static/media/banner.988eac7facf3a93a1a56.png",
+    "static/media/logo2.svg": "/startup-landingpage/static/media/logo2.736b982ecded306a326917597227527b.svg",
+    "static/media/logo.svg": "/startup-landingpage/static/media/logo.6e3e1733c9848af1451ca7a74a3d6dc5.svg",
+    "static/media/symbol2.svg": "/startup-landingpage/static/media/symbol2.d0ba902fdc3e9fa68ea60c94054f48e5.svg",
+    "static/media/existing1.svg": "/startup-landingpage/static/media/existing1.d87d7c63bde29e936adb9052a03de003.svg",
+    "static/media/symbol1.svg": "/startup-landingpage/static/media/symbol1.c3d3f1cc6033d982e7e3400cfc0341a7.svg",
+    "static/media/existing4.svg": "/startup-landingpage/static/media/existing4.dcb4d6c29dbce681a5b30302a20af1c3.svg",
+    "static/media/feature3.svg": "/startup-landingpage/static/media/feature3.a3d0a0ac3791edcd539db2a3725b9e70.svg",
+    "static/media/feature2.svg": "/startup-landingpage/static/media/feature2.251a18f1f9595d002b5300767e8af72e.svg",
+    "static/media/symbol3.svg": "/startup-landingpage/static/media/symbol3.d0c2c3a652221d0d78aa4febc4b349d5.svg",
+    "static/media/existing3.svg": "/startup-landingpage/static/media/existing3.90e2080565f87c103e45615c36a02736.svg",
+    "static/media/existing2.svg": "/startup-landingpage/static/media/existing2.db4ff25a6d809730ce609dae522a3e8b.svg",
+    "static/media/existing6.svg": "/startup-landingpage/static/media/existing6.26a0ca7c72092e7ace6e3e8c958ae9a2.svg",
+    "static/media/feature1.svg": "/startup-landingpage/static/media/feature1.609b36e48550a44d80b8790e8306a800.svg",
+    "static/media/existing5.svg": "/startup-landingpage/static/media/existing5.f54a67a387c7e59bbad2300f689b500d.svg",
+    "static/media/featureItem1.svg": "/startup-landingpage/static/media/featureItem1.82290270c2c456c7520fe868f4ee6ca6.svg",
+    "static/media/featureItem2.svg": "/startup-landingpage/static/media/featureItem2.be3d4834ee46737bef2f98afaff5c222.svg",
+    "index.html": "/startup-landingpage/index.html",
+    "main.a6139c55.css.map": "/startup-landingpage/static/css/main.a6139c55.css.map",
+    "main.1e07f3c2.js.map": "/startup-landingpage/static/js/main.1e07f3c2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a6139c55.css",
+    "static/js/main.1e07f3c2.js"
+  ]
+}
