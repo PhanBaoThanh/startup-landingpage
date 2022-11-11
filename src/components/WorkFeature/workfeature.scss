@@ -1,0 +1,158 @@
+@use '../../responsive.scss' as *;
+
+.workFeature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+
+    .workFeatureHeader{
+        margin-bottom: 60px;
+        p{
+            font-size: 14px;
+            opacity: .7;
+            color: #fff;
+            letter-spacing: 2px;
+            line-height: 1.5;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 8px;
+            @include mobile{
+                font-size: 12px;
+            }
+        }
+        
+        h2{
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 1.2;
+            color: #fff;
+            text-align: center;
+            @include mobile{
+                font-size: 24px;
+            }
+        }
+    }
+
+    .workFeatureItems{
+        display: flex;
+        flex-wrap: wrap;
+        .workFeatureItem{
+            position: relative;
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+
+            &.arrow1{
+                &::before{
+                    content: '';
+                    @include mobile{
+                        display: none;
+                    }
+                    display: block;
+                    background-image: url('../../img/arrow2.png');
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    width: 215px;
+                    height: 60px;
+                    opacity: 0.3;
+                    position: absolute;
+                    top: 0px;
+                    left: 75px;
+                    width: 215px;
+                    height: 60px;
+                    opacity: .3;
+                }
+            }
+
+            &.arrow2{
+                &::before{
+                    content: '';
+                    @include mobile{
+                        display: none;
+                    }
+                    display: block;
+                    background-image: url('../../img/arrow.png');
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    width: 215px;
+                    height: 60px;
+                    opacity: 0.3;
+                    position: absolute;
+                    top: 17px;
+                    left: 75px;
+                    width: 215px;
+                    height: 60px;
+                    opacity: .3;
+                }
+
+            }
+
+            & + .workFeatureItem{
+                padding-left: 20px;
+                @include mobile{
+                    padding: 0;
+                }
+            }
+
+            @include mobile{
+                padding: 0;
+                width: 100%;
+                margin-bottom: 35px;
+                align-items: center;
+            }
+
+            
+
+            .workFeatureItemNumber{
+                width: 70px;
+                height: 70px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 30px;
+                background-color: #fff;
+                border-radius: 28px;
+                font-weight: 700;
+                color: #234582;
+                margin-bottom: 30px;
+                @include mobile{
+                    width: 50px;
+                    margin-bottom: 25px;
+                    height: 50px;
+                    border-radius: 15px;
+                    font-size: 24px;
+                }
+            }
+
+            .workFeatureItemHeader{
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 1.55;
+                letter-spacing: 1px;
+                margin-bottom: 10px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                -webkit-line-clamp: 2;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                @include mobile{
+                    text-align: center;
+                    font-size: 18px;
+                }
+            }
+
+            .workFeatureItemDescription{
+                line-height: 2;
+                font-weight: 400;
+                color: #fff;
+                opacity: .7;
+                font-size: 15px;
+                @include mobile{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

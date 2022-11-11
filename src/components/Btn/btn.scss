@@ -1,0 +1,57 @@
+@use '../../responsive.scss' as *;
+.btn{
+    font-weight: 500;
+    border: 1.5px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;     
+    border-radius: 45px;
+    appearance: none;
+    display: inline-block;
+    text-align: center;
+    padding: 8px 30px;
+    transition: .2s;
+    @include mobile{
+        padding: 6px 20px;
+        font-size: 14px;
+    }
+
+    
+
+    &.bgWhite{
+        background-color: #fff;
+        color: #000;
+        border: 1.5 solid #fff;
+    }
+
+    &.bgBlue{
+        background-color: #1F3E76;
+        color: #fff;
+        border: 1.5px solid #1F3E76;
+    }
+
+    &.isTransparent{
+        &:hover{
+            background-color: #fff;
+            color: #1F3E76;
+        }
+    }
+
+    &.isScroll{
+        border: 1.5px solid #1F3E76;
+        color: #1F3E76;
+        &:hover{
+            background-color: #1F3E76;
+            color: #fff;
+        }
+    }
+
+    &.hidden{
+        background-color: transparent;
+        color: #fff;
+    }
+
+    &:hover{
+        box-shadow: rgb(31 62 118 / 57%) 0px 9px 20px -5px;
+    }
+}

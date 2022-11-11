@@ -1,0 +1,32 @@
+@use '../../responsive.scss' as *;
+
+.containerPayment{
+    position: relative;
+    margin-top: 0;
+    .containerItemPayment{
+        box-sizing: border-box;
+        margin: 0;
+        min-width: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        z-index: -1;
+        width: 100%;
+        background-image: url('../../img/banner.jpg');
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: cover;
+        @include largeMobile{
+            width: calc(50% + 400px);
+        }
+    
+        @include mediumPc{
+            width: calc(50% + 480px);
+        }
+    
+        @include largePc{
+            width: calc(50% + 570px);
+        }
+    }
+}

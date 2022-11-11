@@ -1,0 +1,25 @@
+@use './responsive.scss' as *;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.8;
+  scroll-behavior: smooth;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.App{
+  .footerText{
+    padding: 20px;
+    background-color: #FCFDFE;
+    font-size: 15px;
+    text-align: center;
+    @include mobile{
+      font-size: 14px;
+    }
+  }
+}

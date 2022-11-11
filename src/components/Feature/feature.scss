@@ -1,0 +1,90 @@
+@use '../../responsive.scss' as *;
+
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .featureHeader{
+        margin-bottom: 60px;
+        p{
+            font-size: 14px;
+            color: #244886;
+            letter-spacing: 2px;
+            line-height: 1.5;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 8px;
+            @include mobile{
+                font-size: 12px;
+            }
+        }
+        
+        h2{
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 1.2;
+            color: #0F2137;
+            text-align: center;
+            @include mobile{
+                font-size: 24px;
+            }
+        }
+    }
+
+    .featureItems{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 80px;
+        @include mobile{
+            padding: 0;
+        }
+        .featureItem{
+            padding: 0 30px;
+            width: calc(100%/3);
+            @include mobile{
+                padding: 0;
+                width: 100%;
+                margin-bottom: 35px;
+            }
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .featureItemImg{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                img{
+                    width: 40%;
+                    object-fit: cover;
+                    margin-bottom: 20px;
+
+                    @include mobile{
+                        width: 25%;
+                    }
+                }
+            }
+
+            .featureItemHeader{
+                font-size: 20px;
+                font-weight: 600;
+                letter-spacing: 1px;
+                margin-bottom: 15px;
+                @include mobile{
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .featureItemDescription{
+                line-height: 2;
+                font-weight: 400;
+                text-align: center;
+                color: #343d48;
+                font-size: 15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+@use '../../responsive.scss' as *;
+.container{
+    padding: 100px 5vw;
+    margin-left: auto;
+    margin-right: auto;
+    @include mobile{
+        padding: 60px 5vw;
+    }
+    
+    &.isHome{
+        border-bottom-right-radius: 150px;
+        height: 100vh;
+        
+    }
+
+    &.isBorder{
+        border-top: 1px solid #ccc;
+    }
+
+    &.backgroundImg{
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: cover;
+        background-color: #1F3E76;
+    }
+
+    &.backgroundImg1{
+        background-image: url('../../img/banner.png');
+    }
+
+    &.backgroundImg2{
+        background-image: url('../../img/backgroundImg2.png');
+    }
+
+
+
+    &.noPadding{
+        padding: 50px;
+        @include mobile{
+            padding: 0 5vw;
+        }
+    }
+}

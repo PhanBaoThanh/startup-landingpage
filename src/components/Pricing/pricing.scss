@@ -1,0 +1,158 @@
+@use '../../responsive.scss' as *;
+
+.pricing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    .pricingHeader{
+        margin-bottom: 60px;
+        p{
+            font-size: 14px;
+            opacity: .7;
+            color: #fff;
+            letter-spacing: 2px;
+            line-height: 1.5;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 8px;
+            @include mobile{
+                font-size: 12px;
+            }
+        }
+        
+        h2{
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 1.2;
+            color: #fff;
+            text-align: center;
+            @include mobile{
+                font-size: 24px;
+            }
+        }
+    }
+
+    .pricingItems{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .pricingItem{
+            width: 40%;
+            @include mobile{
+                width: 100%;
+                margin-bottom: 30px;
+            }
+            border-radius: 10px;
+            padding: 60px 40px;
+            & + .pricingItem{
+                margin-left: 25px;
+
+                @include mobile{
+                    margin: 0;
+                }
+            }
+
+            @include mobile{
+                padding: 50px 15px;
+            }
+
+            .pricingItemContent{
+                position: relative;
+
+                display: flex;
+                flex-direction: column;
+
+                .pricingItemContentRecommend{
+                    background-color: #EF9E48;
+                    position: absolute;
+                    font-size: 14px;
+                    font-weight: 600;
+                    padding: 4px 10px;
+                    border-radius: 4px;
+                    color: #fff;
+                    bottom: 100%;
+                }
+
+                .pricingItemHeader{
+                    display: flex;
+                    margin-bottom: 50px;
+                    @include mobile{
+                        margin-bottom: 35px;
+                    }
+                    justify-content: space-between;
+                    .pricingItemHeaderLeft{
+                        h3{
+                            font-size: 22px;
+                        }
+                        p{
+                            font-size: 16px;
+                            opacity: .7;
+                        }
+                    }
+
+                    .pricingItemHeaderRight{
+                        text-align: right;
+                        .pricingItemHeaderRightCost{
+                            color:#25CB9E;
+                            font-size: 26px;
+                            font-weight: 600;
+                            letter-spacing: 1px;
+                            @include mobile{
+                                font-size: 20px;
+                            }
+
+                            span{
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+
+                .pricingItemList{
+                    display: flex;
+                    flex-direction: column;
+                    .pricingItemListItem{
+                        display: flex;
+                        margin-bottom: 22px;
+
+                        &.isActive{
+                            opacity: .4;
+                        }
+
+                        .pricingItemListItemIcon{
+                            color: #25CB9E;
+                            margin-right: 10px;
+                            svg{
+                                margin-bottom: auto;
+                                font-size: 22px;
+                                margin-top: 2px;
+
+                            }
+                        }
+                        p{
+                            font-size: 15px;
+                            line-height: 1.65;
+                            letter-spacing: .5px;
+                            padding-right: 30px;
+                            @include mobile{
+                                font-size: 15px;
+                                line-height: 1.7;
+                                padding-right: 10px;
+                            }
+                        }
+                    }
+                }
+
+                .pricingItemBtn{
+                    margin-top: 50px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    @include mobile{
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

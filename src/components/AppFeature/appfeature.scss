@@ -1,0 +1,77 @@
+@use '../../responsive.scss' as *;
+
+.appfeature{
+    display: flex;
+    @include mobile{
+        flex-direction: column;
+    }
+
+    .appfeatureContent{
+        width: 44%;
+        display: flex;
+        flex-direction: column;
+
+        @include mobile{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .appfeatureContentTop{
+            font-size: 14px;
+            color: #244886;
+            letter-spacing: 2px;
+            line-height: 1.5;
+            font-weight: 600;
+            margin-bottom: 8px;
+            @include mobile{
+                text-align: center;
+                font-size: 12px;
+            }
+        }
+
+        .appfeatureContentHeader{
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 1.22;
+            color: #0F2137;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+            @include mobile{
+                letter-spacing: 0;
+                text-align: center;
+                font-size: 24px;
+            }
+        }
+
+        .appfeatureContentDescription{
+            line-height: 2.2;
+            font-size: 17px;
+            font-weight: 400;
+            color: #02073E;
+            margin-bottom: 30px;
+            @include mobile{
+                text-align: center;
+                font-size: 15px;
+                line-height: 1.85;
+            }
+        }
+
+        .appfeatureContentBtn{
+            @include mobile{
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    .appfeatureBanner{
+        width: 56%;
+        @include mobile{
+            width: 100%;
+        }
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

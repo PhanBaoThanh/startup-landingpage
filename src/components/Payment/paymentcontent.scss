@@ -1,0 +1,85 @@
+@use '../../responsive.scss' as *;
+.payment{
+    display: flex;
+    padding: 0 30px;
+    @include mobile{
+        padding: 0 20px;
+        flex-direction: column;
+    }
+
+    .paymentContent{
+        width: 50%;
+        order: 2;
+        display: flex;
+        padding: 0 2%;
+        justify-content: center;
+        flex-direction: column;
+
+        @include mobile{
+            order: 1;
+            width: 100%;
+            padding-top: 100px;
+            margin-bottom: 30px;
+        }
+
+        .paymentContentTop{
+            font-size: 14px;
+            color: #244886;
+            letter-spacing: 2px;
+            line-height: 1.5;
+            font-weight: 600;
+            margin-bottom: 8px;
+            @include mobile{
+                text-align: center;
+                font-size: 12px;
+            }
+        }
+
+        .paymentContentHeader{
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 1.22;
+            color: #0F2137;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+            @include mobile{
+                letter-spacing: 0;
+                text-align: center;
+                font-size: 24px;
+            }
+        }
+
+        .paymentContentDescription{
+            line-height: 2.2;
+            font-size: 17px;
+            font-weight: 400;
+            color: #02073E;
+            margin-bottom: 30px;
+            @include mobile{
+                text-align: center;
+                font-size: 15px;
+                line-height: 1.85;
+            }
+        }
+
+        .paymentContentBtn{
+            @include mobile{
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    .paymentBanner{
+        order: 1;
+        width: 50%;
+        @include mobile{
+            width: 100%;
+            order: 2;
+        }
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
